@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  font-family: 'Yu Gothic','Hiragino Kaku Gothic ProN','Yu Mincho Light','Hiragino Mincho ProN','Meiryo UI',Arial,sans-serif;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 96%;
+}
+
+a {
+  color: #2c84cc;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1, h2 {
+  padding-top: 18px;
+  margin: 0 0 12px;
+}
+
+p.tac {
+  text-align: center;
+}
+
+div#contents {
+  border: 1px solid #282523;
+  display: inline-block;
+  padding: 8px 8px 4px;
+  margin: 0 0 18px;
+}
+
+div#contents p {
+  text-align: center;
+}
+
+div#contents ul {
+  margin: 8px 0;
+  padding-inline-start: 1.2em;
+}
+
+div#contents ul li {
+  margin: 2px 0;
+}
+
+table {
+  border: 1px solid #888;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px solid #888;
+  padding: 1px 4px;
+}
+
+table td.unitName {
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+table td.separator {
+  text-align: center;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.gekiatsu {
+  color: #008839;
+}
+
+.red {
+  color: #f00;
+}
+
+div#updates {
+  color: #a1a499;
+  font-size: 0.8em;
+  margin: 48px 0 4px;
+}
+
+div#updates p {
+  margin: 0;
+}
+
+div#updates ul {
+  margin: 4px;
+  padding-inline-start: 1.2em;
+}
+
+div#updates ul li {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+}
+
+.transparent {
+  opacity: 0 !important;
+}
+
+.none {
+  display: none !important;
+}

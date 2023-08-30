@@ -32,15 +32,16 @@ div#contents {
   border: 1px solid #282523;
   display: inline-block;
   padding: 8px 8px 4px;
-  margin: 8px 0 18px;
+  margin: 12px 0 18px;
 }
 
 div#contents p {
+  margin: 0;
   text-align: center;
 }
 
 div#contents ul {
-  margin: 8px 0;
+  margin: 4px 0 6px;
   padding-inline-start: 1.2em;
 }
 
@@ -74,6 +75,8 @@ table td.priority {
 
 table td span.nowrap {
   display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 p {

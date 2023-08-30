@@ -2,10 +2,9 @@
   margin:0;
   border:none;
   padding:0;
-  font-family: 'Yu Gothic','Hiragino Kaku Gothic ProN','Yu Mincho Light','Hiragino Mincho ProN','Meiryo UI',Arial,sans-serif;
 }
 .inner{
-  width:100%;
+  font-family: 'Yu Gothic','Hiragino Kaku Gothic ProN','Yu Mincho Light','Hiragino Mincho ProN','Meiryo UI',Arial,sans-serif;
   max-width:1366px;
   margin:0 auto;
   overflow-x:hidden;
@@ -28,7 +27,7 @@ div#contents{
   border: 1px solid #282523;
   display: inline-block;
   padding: 8px 8px 4px;
-  margin: 0 0 18px;
+  margin: 8px 0 18px;
   p{
     text-align: center;
   }
@@ -54,6 +53,12 @@ table{
     }
     &.separator{
       text-align: center;
+    }
+    &.priority{
+      white-space: nowrap;
+    }
+    span.nowrap{
+      display: inline-block;
     }
   }
 }

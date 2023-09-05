@@ -10,6 +10,7 @@
   margin:0 auto;
   overflow-x:hidden;
   width:96%;
+  -webkit-text-size-adjust:100%;
 }
 a,
 a span{
@@ -74,7 +75,6 @@ table{
     }
     span.nowrap{
       display: inline-block;
-      font-weight: bold;
     }
   }
 }
@@ -83,24 +83,68 @@ p{
 }
 .gekiatsu{
   color: #008839;
+  display: inline-block;
 }
 .red{
   color:#f00;
+  span{
+    color:#f00;
+  }
 }
 div#updates{
   color: #a1a499;
-  font-size: 0.72em;
+  font-size: 11px;
   margin: 36px 0 4px;
   p{
-    margin: 0 0 4px;
+    margin: 0;
   }
   table{
+    margin-top: 4px;
+    border: none;
     td{
       border: 1px #ccc solid;
-      p{
-        margin: 0;
+      &.noBorder{
+        border: 0;
       }
     }
+  }
+}
+
+.landscape{
+  display: none;
+}
+
+
+@media(orientation:landscape){
+  table td{
+    &.small{
+      font-size: 1em;
+    }
+    &.toosmall{
+      font-size: 1em;
+    }
+  }
+  .smartphone{
+    display: none;
+  }
+  .landscape{
+    display: inline-block;
+  }
+}
+@media(min-width:768px){
+  table td{
+    &.small{
+      font-size: 1em;
+    }
+    &.toosmall{
+      font-size: 1em;
+    }
+  }
+  .smartphone{
+    display: none;
+  }
+  .landscape{
+    display: inline-block;
   }
 }
 

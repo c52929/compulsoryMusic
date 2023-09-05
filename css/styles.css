@@ -12,6 +12,7 @@
   margin: 0 auto;
   overflow-x: hidden;
   width: 96%;
+  -webkit-text-size-adjust: 100%;
 }
 
 a,
@@ -95,7 +96,6 @@ table td.toosmall {
 
 table td span.nowrap {
   display: inline-block;
-  font-weight: bold;
 }
 
 p {
@@ -104,28 +104,72 @@ p {
 
 .gekiatsu {
   color: #008839;
+  display: inline-block;
 }
 
 .red {
   color: #f00;
 }
 
+.red span {
+  color: #f00;
+}
+
 div#updates {
   color: #a1a499;
-  font-size: 0.72em;
+  font-size: 11px;
   margin: 36px 0 4px;
 }
 
 div#updates p {
-  margin: 0 0 4px;
+  margin: 0;
+}
+
+div#updates table {
+  margin-top: 4px;
+  border: none;
 }
 
 div#updates table td {
   border: 1px #ccc solid;
 }
 
-div#updates table td p {
-  margin: 0;
+div#updates table td.noBorder {
+  border: 0;
+}
+
+.landscape {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  table td.small {
+    font-size: 1em;
+  }
+  table td.toosmall {
+    font-size: 1em;
+  }
+  .smartphone {
+    display: none;
+  }
+  .landscape {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  table td.small {
+    font-size: 1em;
+  }
+  table td.toosmall {
+    font-size: 1em;
+  }
+  .smartphone {
+    display: none;
+  }
+  .landscape {
+    display: inline-block;
+  }
 }
 
 .transparent {

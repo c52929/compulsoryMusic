@@ -70,8 +70,16 @@ table{
     &.small{
       font-size: 0.96em;
     }
-    &.toosmall{
-      font-size: 0.72em;
+    &.smartphonePriority{
+      // border:none;
+      &#noBorderBottom{
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      &#noBorderTop{
+        border-top:none;
+        padding-top: 0;
+      }
     }
     span.nowrap{
       display: inline-block;
@@ -106,6 +114,10 @@ div#updates{
       &.noBorder{
         border: 0;
       }
+      &.priorityCenter{
+        white-space: nowrap;
+        text-align: center;
+      }
     }
   }
 }
@@ -115,13 +127,11 @@ div#updates{
 }
 
 
+
 @media(orientation:landscape){
   table td{
     &.small{
-      font-size: 1em;
-    }
-    &.toosmall{
-      font-size: 1em;
+      font-size: 0.84em;
     }
   }
   .smartphone{
@@ -134,9 +144,6 @@ div#updates{
 @media(min-width:768px){
   table td{
     &.small{
-      font-size: 1em;
-    }
-    &.toosmall{
       font-size: 1em;
     }
   }

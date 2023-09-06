@@ -90,8 +90,14 @@ table td.small {
   font-size: 0.96em;
 }
 
-table td.toosmall {
-  font-size: 0.72em;
+table td.smartphonePriority#noBorderBottom {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+table td.smartphonePriority#noBorderTop {
+  border-top: none;
+  padding-top: 0;
 }
 
 table td span.nowrap {
@@ -138,16 +144,18 @@ div#updates table td.noBorder {
   border: 0;
 }
 
+div#updates table td.priorityCenter {
+  white-space: nowrap;
+  text-align: center;
+}
+
 .landscape {
   display: none;
 }
 
 @media (orientation: landscape) {
   table td.small {
-    font-size: 1em;
-  }
-  table td.toosmall {
-    font-size: 1em;
+    font-size: 0.84em;
   }
   .smartphone {
     display: none;
@@ -159,9 +167,6 @@ div#updates table td.noBorder {
 
 @media (min-width: 768px) {
   table td.small {
-    font-size: 1em;
-  }
-  table td.toosmall {
     font-size: 1em;
   }
   .smartphone {
